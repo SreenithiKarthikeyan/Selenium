@@ -1,0 +1,17 @@
+package com.EdgeBrowserTest;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class TestEdgeBrowser {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.egde.driver", "C:\\Users\\Sreenithi K\\Testing\\Selenium EdgeBrowser Launch\\EdgeBrowserJars\\msedgedriver.exe");
+		WebDriver driver = new EdgeDriver();
+		driver.get("https://www.hollandandbarrett.com");
+		driver.manage().window().maximize();
+
+	}
+
+}
